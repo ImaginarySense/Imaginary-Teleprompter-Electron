@@ -1,0 +1,60 @@
+{
+  "name": "imaginary-teleprompter-installer",
+  "email": "support@imaginary.tech",
+  "homepage":"http://imaginary.tech/teleprompter/",
+  "description": "The most complete and professional free software teleprompter app on the web.",
+  "license": "GPL-3.0+",
+  "version": "2.0.0-33",
+  "keywords": [
+    "teleprompter", "imaginary", "television", "online", "portable", "local"
+  ],
+  "author": "Imaginary Films LLC <support@imaginary.tech> (http://imaginary.tech)",
+  "contributors": [
+    "Javier O. Cordero-Pérez <javier@imaginary.tech> (https://www.linkedin.com/in/javier-oscar-cordero-p%25C3%25A9rez-70658033)",
+    "Victor A. Ortiz-Alvarado <va2ron1@gmail.com> (https://twitter.com/Va2ron1)",
+    "Rafael J. Sierra-Soto <rafael.sierra2@upr.edu> (https://www.facebook.com/rafael.jose.7737)",
+    "Keyvan Pérez Pérez <keyvan.perez2@gmail.com> (https://github.com/keyvanp)"
+    ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imaginaryfilms/Teleprompter"
+  },
+  "bugs": {
+    "url": "http://imaginary.tech/support/teleprompter"
+  },
+  "main": "main.js",
+  "devDependencies": {
+    "electron-builder": "^7.3.0",
+   	"electron-prebuilt": "^1.4.1"
+  },
+	"scripts": {
+	  "postinstall": "install-app-deps",
+	  "start": "electron ./app --enable-logging",
+	  "dev": "NODE_ENV='development' npm run start",
+	  "dist": "npm run dist:osx && npm run dist:linux && npm run dist:win32 && npm run dist:win64",
+    "dist:osx": "build --platform darwin",
+    "dist:linux": "build --platform linux",
+    "dist:win32": "build --platform win32 --arch ia32",
+    "dist:win64": "build --platform win32 --arch x64",
+    "pack": "build --dir"
+	},
+  "engine": "node >= 1.1.65",
+  "preferGlobal": "false",
+  "build": {
+    "appId": "ImaginaryFilms.Teleprompter.TeleprompterForWindows",
+    "app-category-type": "app-category-type=public.app-category.video",
+    "asar": "true",
+    "productName": "Teleprompter by Imaginary Films",
+    "win": {
+      "iconUrl": "(windows-only) https link to icon"
+    },
+    "mac": {
+      "appId": "tech.imaginary.Teleprompter"
+    },
+    "linux": {
+      "target": [ "AppImage", "deb", "rpm", "apk", "tar.gz" ],
+      "depends": ["libappindicator1", "libnotify-bin"]
+    },
+    "compression": "maximum"
+  }
+}
