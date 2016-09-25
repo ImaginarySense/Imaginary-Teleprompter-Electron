@@ -1,7 +1,8 @@
+![Teleprompter](http://imaginary.tech/teleprompter/img/header.png)
+
 # Teleprompter-Electron
 Build standalone cross-platform instances of our Teleprompter with Electron.
 
-![Teleprompter](http://imaginary.tech/teleprompter/img/header.png)
 Introduction
 -------------
 "Teleprompter" is a professional grade, multi-platform, free software teleprompter for anyone to use.
