@@ -31,9 +31,10 @@
 	  "postinstall": "install-app-deps",
 	  "start": "electron ./app --enable-logging",
 	  "dev": "NODE_ENV='development' npm run start",
-	  "dist": "npm run dist:osx && npm run dist:linux && npm run dist:win32 && npm run dist:win64",
-    "dist:osx": "build --platform darwin",
+	  "dist": "npm run dist:win && npm run dist:linux && npm run dist:osx",
+    "dist:winux": "npm run dist:win && npm run dist:linux",
     "dist:linux": "build --platform linux",
+    "dist:osx": "build --platform darwin",
     "dist:win": "npm run dist:win64 && npm run dist:win32",
     "dist:win32": "build --platform win32 --arch ia32",
     "dist:win64": "build --platform win32 --arch x64",
@@ -54,8 +55,12 @@
       "icon": "build/icon.icns"
     },
     "linux": {
-      "target": [ "AppImage", "deb", "rpm", "apk", "tar.gz" ],
-      "depends": ["libappindicator1", "libnotify-bin"]
+      "target": [ "AppImage", "deb", "rpm", "pacman", "freebsd" ],
+      "depends": ["libappindicator1", "libnotify-bin"],
+      "synopsis": "The most complete and professional free software teleprompter app on the web.",
+      "description": "Professional grade teleprompter software. Built with web technologies so anyone can customize it. Features include: mirroring, dual-screen support, rich text editing, image support, custom styles, tablet mode, webcam mode, auto-save and accelerated graphics.",
+      "category": "Video",
+      "packageCategory": "Video"
     },
     "compression": "maximum"
   }
