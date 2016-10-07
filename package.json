@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "imaginary-teleprompter-installer",
   "email": "support@imaginary.tech",
   "homepage":"http://imaginary.tech/teleprompter/",
@@ -47,10 +47,17 @@
     "app-category-type": "app-category-type=public.app-category.video",
     "asar": "true",
     "productName": "Teleprompter by Imaginary Films",
+    "squirrelWindows":{
+      "msi": false,
+      "loadingGif":"build/install-spinner.png"
+    },
     "win": {
-      "icon": "build/icon.ico"
+      "title":"Teleprompter",
+      "icon": "build/icon.ico",
+      "msi": false
     },
     "mac": {
+      "title":"Teleprompter",
       "appId": "tech.imaginary.Teleprompter",
       "icon": "build/icon.icns"
     },
