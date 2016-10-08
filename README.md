@@ -1,4 +1,4 @@
-![Teleprompter](http://imaginary.tech/teleprompter/img/header.png)
+![Teleprompter](https://github.com/imaginaryfilms/Teleprompter-Electron/raw/master/build/install-spinner.png)
 
 # Teleprompter-Electron
 Build standalone cross-platform instances of our Teleprompter with Electron.
