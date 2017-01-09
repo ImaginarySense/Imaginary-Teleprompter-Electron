@@ -4,7 +4,7 @@
   "homepage":"http://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter app on the web.",
   "license": "GPL-3.0+",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "keywords": [
     "teleprompter", "imaginary", "television", "online", "portable", "local"
   ],
@@ -24,8 +24,9 @@
   },
   "main": "main.js",
   "devDependencies": {
-    "electron-builder": "^7.3.0",
-   	"electron-prebuilt": "^1.4.1"
+    "electron-builder": "^11.2.0",
+   	"electron-prebuilt": "^1.4.13",
+    "electron-builder-squirrel-windows": "^11.2.0"
   },
 	"scripts": {
 	  "postinstall": "install-app-deps",
@@ -36,15 +37,15 @@
     "dist:linux": "build --platform linux",
     "dist:osx": "build --platform darwin",
     "dist:win": "npm run dist:win64 && npm run dist:win32",
-    "dist:win32": "build --platform win32 --arch ia32",
-    "dist:win64": "build --platform win32 --arch x64",
+    "dist:win32": "build --platform win32 --ia32",
+    "dist:win64": "build --platform win32 --x64",
     "pack": "build --dir"
 	},
   "engine": "node >= 1.1.65",
   "preferGlobal": "false",
   "build": {
     "appId": "ImaginaryFilms.Teleprompter.TeleprompterForWindows",
-    "app-category-type": "app-category-type=public.app-category.video",
+    "mac-category-type": "app-category-type=public.app-category.video",
     "asar": "true",
     "productName": "Teleprompter by Imaginary Films",
     "squirrelWindows":{
@@ -52,6 +53,7 @@
       "loadingGif":"build/install-spinner.png"
     },
     "win": {
+      "target": "squirrel",
       "title":"Teleprompter",
       "icon": "build/icon.ico",
       "msi": false
