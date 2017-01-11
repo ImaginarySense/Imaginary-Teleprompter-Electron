@@ -32,7 +32,7 @@
 	  "start": "electron ./app --enable-logging",
 	  "dev": "NODE_ENV='development' npm run start",
 	  "dist": "npm run dist:win && npm run dist:linux && npm run dist:osx",
-    "dist:winux": "npm run dist:win && npm run dist:linux",
+    "dist:winux": "npm run dist:win && npm   run dist:linux",
     "dist:linux": "build --platform linux",
     "dist:osx": "build --platform darwin",
     "dist:win": "npm run dist:win64 && npm run dist:win32",
@@ -50,7 +50,7 @@
     "squirrelWindows":{
       "msi": false,
       "loadingGif":"build/install-spinner.png",
-      "remoteReleases":true
+      "remoteReleases":"https://github.com/imaginaryfilms/Teleprompter-Electron"
     },
     "win": {
       "title":"Teleprompter",
