@@ -25,8 +25,7 @@
   "main": "main.js",
   "devDependencies": {
     "electron-builder": "^11.2.0",
-   	"electron-prebuilt": "^1.4.13",
-    "electron-builder-squirrel-windows": "^11.2.0"
+   	"electron-prebuilt": "^1.4.13"
   },
 	"scripts": {
 	  "postinstall": "install-app-deps",
@@ -37,8 +36,8 @@
     "dist:linux": "build --platform linux",
     "dist:osx": "build --platform darwin",
     "dist:win": "npm run dist:win64 && npm run dist:win32",
-    "dist:win32": "build --platform win32 --ia32",
-    "dist:win64": "build --platform win32 --x64",
+    "dist:win32": "build --platform win32 --arch ia32",
+    "dist:win64": "build --platform win32 --arch x64",
     "pack": "build --dir"
 	},
   "engine": "node >= 1.1.65",
@@ -50,12 +49,13 @@
     "productName": "Teleprompter by Imaginary Films",
     "squirrelWindows":{
       "msi": false,
-      "loadingGif":"build/install-spinner.png"
+      "loadingGif":"build/install-spinner.png",
+      "remoteReleases":true
     },
     "win": {
-      "target": "squirrel",
       "title":"Teleprompter",
       "icon": "build/icon.ico",
+      "target":"squirrel",
       "msi": false
     },
     "mac": {
