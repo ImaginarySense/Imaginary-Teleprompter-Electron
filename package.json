@@ -25,6 +25,7 @@
   "main": "main.js",
   "devDependencies": {
     "electron-builder": "^11.2.0",
+    "electron-builder-squirrel-windows": "*",
    	"electron": "^1.4.13"
   },
 	"scripts": {
