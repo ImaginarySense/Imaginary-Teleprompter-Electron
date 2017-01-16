@@ -1,31 +1,31 @@
 ﻿{
-  "name": "imaginary-teleprompter-installer",
+  "name": "imaginary-teleprompter-electron",
   "email": "support@imaginary.tech",
   "homepage":"http://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter app on the web.",
   "license": "GPL-3.0+",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "keywords": [
     "teleprompter", "imaginary", "television", "online", "portable", "local"
   ],
   "author": "Imaginary Films LLC <support@imaginary.tech> (http://imaginary.tech)",
   "contributors": [
-    "Javier O. Cordero-Pérez <javier@imaginary.tech> (https://www.linkedin.com/in/javier-oscar-cordero-p%25C3%25A9rez-70658033)",
+    "Javier O. Cordero-Pérez <javier@imaginary.tech> (http://javiercordero.info)",
     "Victor A. Ortiz-Alvarado <va2ron1@gmail.com> (https://twitter.com/Va2ron1)",
     "Rafael J. Sierra-Soto <rafael.sierra2@upr.edu> (https://www.facebook.com/rafael.jose.7737)",
     "Keyvan Pérez Pérez <keyvan.perez2@gmail.com> (https://github.com/keyvanp)"
     ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/imaginaryfilms/Teleprompter"
+    "url": "https://github.com/imaginaryfilms/Teleprompter-Electron"
   },
   "bugs": {
-    "url": "http://imaginary.tech/support/teleprompter"
+    "url": "https://github.com/imaginaryfilms/Teleprompter-Core/issues"
   },
   "main": "main.js",
   "devDependencies": {
     "electron-builder": "^11.2.0",
-   	"electron-prebuilt": "^1.4.13"
+   	"electron": "^1.4.13"
   },
 	"scripts": {
 	  "postinstall": "install-app-deps",
@@ -50,25 +50,31 @@
     "squirrelWindows":{
       "msi": false,
       "loadingGif":"build/install-spinner.png",
-      "remoteReleases":"https://github.com/imaginaryfilms/Teleprompter-Electron"
+      "remoteReleases":"https://github.com/imaginaryfilms/Teleprompter-Electron",
+      "copyright":"Copyright © year author"
     },
     "win": {
-      "title":"Teleprompter",
+      "title": "Teleprompter",
       "icon": "build/icon.ico",
-      "target":"squirrel",
+      "target": "squirrel",
       "msi": false
+    },
+    "dmg": {
+      "title": "imaginary-teleprompter ${version}"
     },
     "mac": {
       "title":"Teleprompter",
-      "appId": "tech.imaginary.Teleprompter",
+      "appId": "tech.imaginary.teleprompter",
       "icon": "build/icon.icns"
     },
     "linux": {
       "target": [ "AppImage", "deb", "rpm", "pacman", "freebsd" ],
-      "depends": ["libappindicator1", "libnotify-bin"],
+      "executableName": "imaginary-teleprompter",
       "synopsis": "The most complete and professional free software teleprompter app on the web.",
+      "vendor": "Imaginary Films LLC <support@imaginary.tech> (http://imaginary.tech)",
+      "maintainer": "Javier O. Cordero Pérez <javier@imaginary.tech> (http://javiercordero.info)",
       "description": "Professional grade teleprompter software. Built with web technologies so anyone can customize it. Features include: mirroring, dual-screen support, rich text editing, image support, custom styles, tablet mode, webcam mode, auto-save and accelerated graphics.",
-      "category": "Video",
+      "category": "AudioVideo;Video;Sequencer",
       "packageCategory": "Video"
     },
     "compression": "maximum"
