@@ -60,12 +60,20 @@
       "msi": false
     },
     "dmg": {
-      "title": "imaginary-teleprompter ${version}"
+      "title": "Teleprompter by Imaginary Films - ${version}",
+      "iconSize": 64,
+      "iconTextSize": 11,
+      "contents": [
+        { "x": 130, "y": 108, "type": "file" },
+        { "x": 130, "y": 222, "type": "link", "path": "/Applications" }
+      ]
     },
     "mac": {
-      "title":"Teleprompter",
+      "target": "dmg",
+      "title":"Teleprompter by Imaginary Films",
       "appId": "tech.imaginary.teleprompter",
-      "icon": "build/icon.icns"
+      "icon": "build/icon.icns",
+      "category": "public.app-category.video"
     },
     "linux": {
       "target": [ "AppImage", "deb", "rpm", "pacman", "freebsd" ],

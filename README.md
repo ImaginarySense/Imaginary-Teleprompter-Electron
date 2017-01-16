@@ -49,8 +49,11 @@ cd ..
 6. Run `npm run dist:linux`.
 
 ##OS X
-* Install Electron dependencies specified at [Electron-Builder's OS X documentation](https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build#macos).
-* Run `npm run dist:osx`.
+Run `npm run dist:osx`.
+
+##Build binaries for all platforms from OS X
+1. Install all dependencies specified at [Electron-Builder's OS X documentation](https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build#macos).
+2. Run `npm run dist`.
 
 Help & Support
 -------------
