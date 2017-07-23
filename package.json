@@ -42,7 +42,7 @@
     "electron-squirrel-startup": "^1.0.0"
   },
   "scripts": {
-    "postinstall": "install-app-deps",
+    "postinstall": "electron-builder install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
     "dist": "npm run dist:win && npm run dist:linux && npm run dist:osx",
@@ -64,6 +64,11 @@
       "msi": false,
       "loadingGif": "build/install-spinner.png",
       "remoteReleases": "https://github.com/imaginaryfilms/Teleprompter-Electron"
+    },
+    "nsis": {
+      "oneClick": "true",
+      "perMachine": "true",
+      "allowElevation": "true"
     },
     "win": {
       "icon": "build/icon.ico",
