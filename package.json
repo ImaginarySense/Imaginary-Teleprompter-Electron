@@ -18,7 +18,11 @@
     "imaginary films",
     "imaginary"
   ],
-  "author": "Imaginary Sense <support@imaginary.tech> (http://imaginary.tech)",
+  "author": {
+    "name": "Imaginary Sense",
+    "email": "support@imaginary.tech",
+    "url": "http://imaginary.tech/"
+  },
   "contributors": [
     "Javier O. Cordero-Pérez <javier@imaginary.tech> (http://javiercordero.info)",
     "Victor A. Ortiz-Alvarado <va2ron1@gmail.com> (https://twitter.com/Va2ron1)",
@@ -33,8 +37,7 @@
     "url": "https://github.com/imaginaryfilms/Teleprompter-Core/issues"
   },
   "main": "main.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "electron": "^1.6.11",
     "electron-builder": "19.16.2",
@@ -56,10 +59,11 @@
   },
   "engine": "node >= 1.1.65",
   "preferGlobal": "false",
+  "copyright": "Copyright © year ${author}",
   "build": {
-    "appId": "ImaginarySense.Teleprompter.TeleprompterForWindows",
-    "asar": "true",
+    "appId": "tech.imaginary.teleprompter",
     "productName": "Teleprompter by Imaginary Sense",
+    "asar": "true",
     "squirrelWindows": {
       "msi": false,
       "loadingGif": "build/install-spinner.png",
@@ -97,6 +101,9 @@
       "icon": "build/icon.icns",
       "category": "public.app-category.video",
       "type": "distribution"
+    },
+    "deb": {
+      "icon": "build/icon.icns"
     },
     "linux": {
       "target": [
