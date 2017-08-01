@@ -40,7 +40,7 @@
   "dependencies": {},
   "devDependencies": {
     "electron": "^1.6.11",
-    "electron-builder": "^19.18.0",
+    "electron-builder": "^19.18.1",
     "electron-builder-squirrel-windows": "^19.18.0",
     "electron-squirrel-startup": "^1.0.0"
   },
