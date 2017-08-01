@@ -107,11 +107,7 @@
     },
     "linux": {
       "target": [
-        "AppImage",
-        "deb",
-        "rpm",
-        "pacman",
-        "freebsd"
+        "pacman"
       ],
       "executableName": "imaginary-teleprompter",
       "synopsis": "The most complete and professional free software teleprompter application.",
