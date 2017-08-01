@@ -1,4 +1,4 @@
-![Teleprompter](https://github.com/imaginaryfilms/Teleprompter-Electron/raw/master/build/install-spinner.png)
+![Teleprompter](https://github.com/ImaginarySense/Teleprompter-Electron/raw/master/build/install-spinner.png)
 
 # Teleprompter-Electron
 Build standalone cross-platform instances of our Teleprompter using Electron.
@@ -19,7 +19,7 @@ One you've got npm, follow these steps in every platform, then proceed to run th
 1. Open a `Terminal` or `Command Prompt` at your desired build location.
 2. Clone this repository and its submodules.
 ```
-git clone --recursive https://github.com/imaginaryfilms/Teleprompter-Electron.git
+git clone --recursive https://github.com/ImaginarySense/Teleprompter-Electron.git
 cd Teleprompter-Electron
 ```
 3. Download dependencies and submodules with npm install. Do this step both in the root folder and `app` submodule.
@@ -71,4 +71,4 @@ If you have an issue, please write it to us, we will help you or fix the bug.
 [Imaginary Films LLC](http://imaginary.tech/) & Contributors
 
 ## License: 
-This software is shared under the [GPL3](https://github.com/imaginaryfilms/Teleprompter-Electron/blob/master/LICENSE) license.
+This software is shared under the [GPL3](https://github.com/ImaginarySense/Teleprompter-Electron/blob/master/LICENSE) license.
