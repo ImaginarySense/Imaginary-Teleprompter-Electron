@@ -37,7 +37,9 @@
     "url": "https://github.com/ImaginarySense/Teleprompter-Core/issues"
   },
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "7zip-bin": "^2.1.0"
+  },
   "devDependencies": {
     "electron": "^1.6.11",
     "electron-builder": "^19.18.1",
@@ -76,10 +78,7 @@
     },
     "win": {
       "icon": "build/icon.ico",
-      "target": "squirrel",
-      "dependencies": {
-        "7zip-bin-win": "^2.1.0"
-      }
+      "target": "squirrel"
     },
     "dmg": {
       "title": "Teleprompter by Imaginary Sense - ${version}",
@@ -103,10 +102,7 @@
       "target": "dmg",
       "icon": "build/icon.icns",
       "category": "public.app-category.video",
-      "type": "distribution",
-      "dependencies": {
-        "7zip-bin-mac": "^1.0.1"
-      }
+      "type": "distribution"
     },
     "deb": {
       "icon": "build/icon.icns"
@@ -125,10 +121,7 @@
       "maintainer": "Javier O. Cordero Perez <javier@imaginary.tech> (http://javiercordero.info)",
       "description": "Professional grade, free software teleprompter. Built with web technologies so anyone can customize it. Features include: mirroring, dual-screen support, rich text editing, image support, custom styles, tablet mode, webcam mode, auto-save and accelerated graphics.",
       "category": "AudioVideo;Video;Sequencer",
-      "packageCategory": "Video",
-      "dependencies": {
-        "7zip-bin-linux": "^1.1.0"
-      }
+      "packageCategory": "Video"
     },
     "compression": "maximum"
   }
