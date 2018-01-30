@@ -1,10 +1,10 @@
 {
   "name": "imaginary-teleprompter-electron",
-  "email": "support@imaginary.tech",
+  "email": "teleprompter@imaginary.tech",
   "homepage": "http://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter application.",
   "license": "GPL-3.0+",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "keywords": [
     "teleprompter",
     "television",
@@ -41,22 +41,21 @@
     "7zip-bin": "^2.1.0"
   },
   "devDependencies": {
-    "electron": "~1.7.8",
-    "electron-builder": "^19.45.4",
-    "electron-builder-squirrel-windows": "^19.18.0",
+    "electron": "^1.8.2-beta.4",
+    "electron-builder": "^19.49.4",
+    "electron-builder-squirrel-windows": "^19.49.4",
     "electron-squirrel-startup": "^1.0.0"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
-    "dist": "npm run dist:win && npm run dist:linux && npm run dist:osx",
-    "dist:winux": "npm run dist:win && npm   run dist:linux",
-    "dist:linux": "build --platform linux",
-    "dist:osx": "build --platform darwin",
-    "dist:win": "npm run dist:win64 && npm run dist:win32",
-    "dist:win32": "build --platform win32 --arch ia32",
-    "dist:win64": "build --platform win32 --arch x64",
+    "dist:linux32": "build --linux --ia32",
+    "dist:linux64": "build --linux --x64",
+    "dist:linuxarm": "build --linux --armv7l",
+    "dist:macos": "build --mac",
+    "dist:win32": "build --win --ia32",
+    "dist:win64": "build --win --x64",
     "pack": "build --dir"
   },
   "engine": "node >= 8.2.1",
@@ -64,7 +63,7 @@
   "copyright": "Copyright © year ${author}",
   "build": {
     "appId": "tech.imaginary.teleprompter",
-    "productName": "Teleprompter by Imaginary Sense",
+    "productName": "Imaginary Teleprompter",
     "asar": "true",
     "squirrelWindows": {
       "msi": false,
@@ -81,7 +80,7 @@
       "target": "squirrel"
     },
     "dmg": {
-      "title": "Teleprompter by Imaginary Sense - ${version}",
+      "title": "Imaginary Teleprompter - ${version}",
       "iconSize": 64,
       "iconTextSize": 11,
       "contents": [
@@ -109,11 +108,12 @@
     },
     "linux": {
       "target": [
-        "AppImage",
+        "tar.gz",
         "deb",
         "rpm",
         "pacman",
-        "freebsd"
+        "freebsd",
+        "AppImage"
       ],
       "executableName": "imaginary-teleprompter",
       "synopsis": "The most complete and professional free software teleprompter application.",
