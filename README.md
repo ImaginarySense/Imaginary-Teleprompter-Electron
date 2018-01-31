@@ -31,17 +31,15 @@ cd Teleprompter-Electron
 ```
 3. Download dependencies and submodules with npm install. Do this step both in the root folder and `app` submodule.
 ```
-npm install
-cd app
-npm install
-cd ..
+npm run setup
 ```
 3. Follow platform specific building steps. If it builds successfully, you should find your binaries in the `dist` folder.
 
 ## Windows
 * Run `npm run dist:win64` to create a 64 bit installer.
 * Run `npm run dist:win32` to create a 32 bit installer.
-* Run `npm run dist:win` to create both 32 bit and 64 bit installers.
+
+**Note:** The following command `npm run dist:win` has been remove to ensure the builds.
 
 ## Linux and BSD
 1. Install Electron dependencies specified at [Electron-Builder's Linux documentation](https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build#linux).
@@ -53,14 +51,13 @@ cd ..
 ```
 4. Under `target`, remove all targets that don't correspond to your distribution. (For example, you would leave `deb` for Ubuntu, rpm for OpenSuse, and pacman for Arch.) Also, leave `AppImage` if you wish to create a universal portable Linux app. You may just use `AppImage` if your system supports it.
 5. Save your changes to `package.json`.
-6. Run `npm run dist:linux`.
+6. Run your choice:
+    * Run `npm run dist:linux32` to create a 32 bit binaries.
+    * Run `npm run dist:linux64` to create a 64 bit binaries.
+    * Run `npm run dist:linuxarm` to create binaries for ARM.
 
 ## OS X
-Run `npm run dist:osx`.
-
-## Build binaries for all platforms from OS X
-1. Install all dependencies specified at [Electron-Builder's OS X documentation](https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build#macos).
-2. Run `npm run dist`.
+* Run `npm run dist:osx`.
 
 Help & Support
 -------------
