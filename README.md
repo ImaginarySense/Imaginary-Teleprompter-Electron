@@ -57,7 +57,7 @@ npm run setup
     * Run `npm run dist:linuxarm` to create binaries for ARM.
 
 ## OS X
-* Run `npm run dist:osx`.
+* Run `npm run dist:macos`.
 
 Help & Support
 -------------
