@@ -4,7 +4,7 @@
   "homepage": "http://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter application.",
   "license": "GPL-3.0+",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "keywords": [
     "teleprompter",
     "television",
@@ -47,6 +47,7 @@
     "electron-squirrel-startup": "^1.0.0"
   },
   "scripts": {
+    "setup": "npm install & cd app & npm install & cd ..",
     "postinstall": "electron-builder install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
