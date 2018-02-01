@@ -4,7 +4,7 @@
   "homepage": "http://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter application.",
   "license": "GPL-3.0+",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "keywords": [
     "teleprompter",
     "television",
@@ -42,8 +42,8 @@
   },
   "devDependencies": {
     "electron": "^1.8.2-beta.4",
-    "electron-builder": "^19.49.4",
-    "electron-builder-squirrel-windows": "^19.49.4",
+    "electron-builder": "^19.55.3",
+    "electron-builder-squirrel-windows": "^19.56.0",
     "electron-squirrel-startup": "^1.0.0"
   },
   "scripts": {
@@ -51,10 +51,12 @@
     "postinstall": "electron-builder install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
+    "dist:linux": "build --linux --ia32 --x64",
     "dist:linux32": "build --linux --ia32",
     "dist:linux64": "build --linux --x64",
-    "dist:linuxarm": "build --linux --armv7l",
+    "dist:linuxarm": "electron-builder build --linux --armv7l",
     "dist:macos": "build --mac",
+    "dist:win": "build --win --ia32 --x64",
     "dist:win32": "build --win --ia32",
     "dist:win64": "build --win --x64",
     "pack": "build --dir"
@@ -110,11 +112,11 @@
     "linux": {
       "target": [
         "tar.gz",
+        "AppImage",
         "deb",
         "rpm",
         "pacman",
-        "freebsd",
-        "AppImage"
+        "freebsd"
       ],
       "executableName": "imaginary-teleprompter",
       "synopsis": "The most complete and professional free software teleprompter application.",

@@ -54,7 +54,7 @@ npm run setup
 6. Run your choice:
     * Run `npm run dist:linux32` to create a 32 bit binaries.
     * Run `npm run dist:linux64` to create a 64 bit binaries.
-    * Run `npm run dist:linuxarm` to create binaries for ARM.
+    * Run `npm install -g electron-builder && electron-builder build --linux --armv7l` to create binaries for ARM.
 
 ## OS X
 * Run `npm run dist:macos`.
