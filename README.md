@@ -16,45 +16,55 @@ Introduction
 
 It's built with web technologies so anyone can customize it to their needs. It may be run on a web browser or as a standalone application for additional features.
 
-Installer Building Instructions
+Installer/Package Building Instructions
 -------------
 
 ## Every platform
 Make sure you have `NodeJS` with `npm` installed on your system before you begin.
 One you've got npm, follow these steps in every platform, then proceed to run the corresponding platform specific command:
 
-1. Open a `Terminal` or `Command Prompt` at your desired build location.
-2. Clone this repository and its submodules.
+1. Install Git and NodeJS on your system.
+2. Open a `Terminal` or `Command Prompt` at your desired build location.
+3. Clone this repository and its submodules.
 ```
 git clone --recursive https://github.com/ImaginarySense/Teleprompter-Electron.git
+```
+4. 4. Move to the root folder of the Teleprompter-Electron project.
+```
 cd Teleprompter-Electron
 ```
-3. Download dependencies and submodules with npm install. Do this step both in the root folder and `app` submodule.
+5. Download dependencies and submodules.
 ```
 npm run setup
 ```
-3. Follow platform specific building steps. If it builds successfully, you should find your binaries in the `dist` folder.
+6. Follow platform specific building steps. If builds are successful, you should find your binaries inside the `dist` folder.
 
 ## Windows
-* Run `npm run dist:win64` to create a 64 bit installer.
-* Run `npm run dist:win32` to create a 32 bit installer.
-
-**Note:** The following command `npm run dist:win` has been remove to ensure the builds.
+* To build 32 bit packages: `npm run dist:win32`
+* To build 64 bit packages: `npm run dist:win64`
+* To build both 32 and 64 bit packages: `npm run dist:win`
 
 ## Linux and BSD
-1. Install Electron dependencies specified at [Electron-Builder's Linux documentation](https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build#linux).
-2. Open `package.json` in a text editor of your preference.
-3. Find the following lines:
+1. If you’re building for Linux, depending what packages you intend to build you should install their dependencies as shown at: https://www.electron.build/multi-platform-build#linux. Commands and dependency names may vary across distributions. The following instructions assume you're using a Debian/Ubuntu derivative.
+```
+sudo apt-get install --no-install-recommends -y icnsutils graphicsmagick
+sudo apt-get install --no-install-recommends -y rpm     #To build rpm
+sudo apt-get install --no-install-recommends -y bsdtar  #To build pacman
+sudo apt-get install --no-install-recommends -y snapcraft #To build snap
+```
+2. Open `package.json` in the text editor of your preference.
+3. Locate the following lines:
 ```
     "linux": {
       "target":
 ```
-4. Under `target`, remove all targets that don't correspond to your distribution. (For example, you would leave `deb` for Ubuntu, rpm for OpenSuse, and pacman for Arch.) Also, leave `AppImage` if you wish to create a universal portable Linux app. You may just use `AppImage` if your system supports it.
-5. Save your changes to `package.json`.
-6. Run your choice:
-    * Run `npm run dist:linux32` to create a 32 bit binaries.
-    * Run `npm run dist:linux64` to create a 64 bit binaries.
-    * Run `npm install -g electron-builder && electron-builder build --linux --armv7l` to create binaries for ARM.
+4. Under `target`, remove all targets that don't correspond to your distribution. (For example, you would leave `deb` for Ubuntu, `rpm` for Fedora, and `pacman` for Arch.) Use `tar.gz` for any other distros and `AppImage` if you wish to create a universal, portable, Linux app.
+5. Save your changes.
+6. Run the command that corresponds to your operating system's architecture:
+    * To build 32 bit packages: `npm run dist:linux32`
+    * To build 64 bit packages: `npm run dist:linux64`
+	* To build both 32 and 64 bit packages: `npm run dist:linux`
+    * To build ARM7l packages: `npm install -g electron-builder` (followed by) `npm run dist:linuxarm`
 
 ## OS X
 * Run `npm run dist:macos`.
@@ -62,6 +72,7 @@ npm run setup
 Help & Support
 -------------
 If you have an issue, please write it to us, we will help you or fix the bug.
+*  Support e-mail <teleprompter@imaginary.tech>
 
 ## Creators:
 *  Javier O. Cordero Pérez <javier.cordero@upr.edu>
