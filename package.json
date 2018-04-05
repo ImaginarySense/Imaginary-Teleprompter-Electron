@@ -71,7 +71,7 @@
     "squirrelWindows": {
       "msi": false,
       "loadingGif": "build/install-spinner.png",
-      "remoteReleases": "https://github.com/imaginaryfilms/Teleprompter-Electron"
+      "remoteReleases": "https://github.com/ImaginarySense/Teleprompter-Electron"
     },
     "nsis": {
       "oneClick": "true",
