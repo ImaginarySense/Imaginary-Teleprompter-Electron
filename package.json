@@ -111,10 +111,12 @@
     },
     "linux": {
       "target": [
+        "AppImage",
         "tar.gz",
         "deb",
         "rpm",
-        "pacman"
+        "pacman",
+        "freebsd"
       ],
       "executableName": "imaginary-teleprompter",
       "synopsis": "The most complete and professional free software teleprompter application.",
@@ -124,6 +126,6 @@
       "category": "AudioVideo;Video;Sequencer",
       "packageCategory": "Video"
     },
-    "compression": "store"
+    "compression": "maximum"
   }
 }
