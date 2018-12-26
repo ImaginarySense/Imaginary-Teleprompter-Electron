@@ -74,13 +74,14 @@
       "remoteReleases": "https://github.com/ImaginarySense/Teleprompter-Electron"
     },
     "nsis": {
-      "oneClick": "true",
+      "oneClick": "false",
       "perMachine": "true",
-      "allowElevation": "true"
+      "allowElevation": "true",
+      "allowToChangeInstallationDirectory": true
     },
     "win": {
       "icon": "build/icon.ico",
-      "target": "squirrel"
+      "target": "nsis"
     },
     "dmg": {
       "title": "Imaginary Teleprompter - ${version}",
