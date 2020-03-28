@@ -3,7 +3,7 @@
   "email": "teleprompter@imaginary.tech",
   "homepage": "http://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter application.",
-  "license": "GPL-3.0+",
+  "license": "AGPL-3.0+",
   "version": "2.3.4",
   "keywords": [
     "teleprompter",
@@ -38,7 +38,8 @@
   },
   "main": "main.js",
   "dependencies": {
-    "7zip-bin": "^3.1.0"
+    "7zip-bin": "^3.1.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^11.0.1"
   },
   "devDependencies": {
     "electron": "1.8.4",
