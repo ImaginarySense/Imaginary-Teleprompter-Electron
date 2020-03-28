@@ -1,18 +1,18 @@
-![Teleprompter](https://github.com/ImaginarySense/Teleprompter-Electron/raw/master/build/install-spinner.png)
+![Imaginary Teleprompter](https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron/raw/master/build/install-spinner.png)
 
-[![GitHub license](https://img.shields.io/badge/license-GPL3-blue.svg)](https://raw.githubusercontent.com/ImaginarySense/Teleprompter-Core/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/ImaginarySense/Teleprompter-Electron.svg)](https://github.com/ImaginarySense/Teleprompter-Electron/releases)
-[![GitHub contributors](https://img.shields.io/github/contributors/ImaginarySense/Teleprompter-Core.svg)](https://github.com/ImaginarySense/Teleprompter-Core/graphs/contributors)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ImaginarySense/Teleprompter-Core.svg)](http://isitmaintained.com/project/ImaginarySense/Teleprompter-Core "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/ImaginarySense/Teleprompter-Core.svg)](http://isitmaintained.com/project/ImaginarySense/Teleprompter-Core "Percentage of issues still open")
+[![GitHub license](https://img.shields.io/badge/license-GPL3-blue.svg)](https://raw.githubusercontent.com/ImaginarySense/Imaginary-Teleprompter/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/ImaginarySense/Imaginary-Teleprompter-Electron.svg)](https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron/releases)
+[![GitHub contributors](https://img.shields.io/github/contributors/ImaginarySense/Imaginary-Teleprompter.svg)](https://github.com/ImaginarySense/Imaginary-Teleprompter/graphs/contributors)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ImaginarySense/Imaginary-Teleprompter.svg)](http://isitmaintained.com/project/ImaginarySense/Imaginary-Teleprompter "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/ImaginarySense/Imaginary-Teleprompter.svg)](http://isitmaintained.com/project/ImaginarySense/Imaginary-Teleprompter "Percentage of issues still open")
 [![SourceForge](https://img.shields.io/sourceforge/dw/teleprompter-imaginary-films.svg)](https://sourceforge.net/projects/teleprompter-imaginary-films/)
-[![Twitter Follow](https://img.shields.io/twitter/follow/imaginary_tech.svg?style=social&label=Follow)](http://twitter.com/user/imaginary_tech)
-# Teleprompter-Electron
+[![Twitter Follow](https://img.shields.io/twitter/follow/imaginary_tech.svg?style=social&label=Follow)](https://twitter.com/user/imaginary_tech)
+# Imaginary Teleprompter Electron
 Build standalone cross-platform instances of our Teleprompter using Electron.
 
 Introduction
 -------------
-"Teleprompter" is a professional grade, multi-platform, free software teleprompter for anyone to use.
+"Imaginary Teleprompter" is a professional grade, multi-platform, free software teleprompter for anyone to use.
 
 It's built with web technologies so anyone can customize it to their needs. It may be run on a web browser or as a standalone application for additional features.
 
@@ -27,11 +27,11 @@ One you've got npm, follow these steps in every platform, then proceed to run th
 2. Open a `Terminal` or `Command Prompt` at your desired build location.
 3. Clone this repository and its submodules.
 ```
-git clone --recursive https://github.com/ImaginarySense/Teleprompter-Electron.git
+git clone --recursive https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron.git
 ```
-4. 4. Move to the root folder of the Teleprompter-Electron project.
+4. 4. Move to the root folder of the Imaginary-Teleprompter-Electron project.
 ```
-cd Teleprompter-Electron
+cd Imaginary-Teleprompter-Electron
 ```
 5. Download dependencies and submodules.
 ```
@@ -75,15 +75,15 @@ If you have an issue, please write it to us, we will help you or fix the bug.
 *  Support e-mail <teleprompter@imaginary.tech>
 
 ## Creators:
-*  Javier O. Cordero Pérez <javier.cordero@upr.edu>
-*  Victor Ortiz <va2ron1@gmail.com>
+*  Javier Cordero <javier@imaginary.tech>
+*  Victor Ortiz <va2ron1@imaginary.tech>
 
 ## Contributors:
 *  Rafael Sierra <rafael.sierra2@upr.edu> 
 *  Keyvan Pérez <keyvan.perez2@gmail.com>
 
 ## Copyright: 
-[Imaginary Films LLC](http://imaginary.tech/) & Contributors
+[Imaginary Sense Inc.](https://imaginary.tech/) & Contributors
 
 ## License: 
-This software is shared under the [GPL3](https://github.com/ImaginarySense/Teleprompter-Electron/blob/master/LICENSE) license.
+This software is shared under the [GPL3](https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron/blob/master/LICENSE) license.
