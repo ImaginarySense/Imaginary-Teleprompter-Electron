@@ -48,9 +48,10 @@ npm run setup
 1. If you’re building for Linux, depending what packages you intend to build you should install their dependencies as shown at: https://www.electron.build/multi-platform-build#linux. Commands and dependency names may vary across distributions. The following instructions assume you're using a Debian/Ubuntu derivative.
 ```
 sudo apt-get install --no-install-recommends -y icnsutils graphicsmagick
-sudo apt-get install --no-install-recommends -y rpm     #To build rpm
-sudo apt-get install --no-install-recommends -y bsdtar  #To build pacman
-sudo apt-get install --no-install-recommends -y snapcraft #To build snap
+sudo apt-get install --no-install-recommends -y rpm              # To build rpm
+sudo apt-get install --no-install-recommends -y bsdtar           # To build pacman
+sudo apt-get install --no-install-recommends -y libarchive-tools # Alternative to bsdtar
+sudo apt-get install --no-install-recommends -y snapcraft        # To build snap
 ```
 2. Open `package.json` in the text editor of your preference.
 3. Locate the following lines:

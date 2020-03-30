@@ -1,10 +1,10 @@
 {
   "name": "imaginary-teleprompter-electron",
   "email": "teleprompter@imaginary.tech",
-  "homepage": "http://imaginary.tech/teleprompter/",
+  "homepage": "https://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter application.",
   "license": "GPL-3.0+",
-  "version": "2.3.4",
+  "version": "2.4.0",
   "keywords": [
     "teleprompter",
     "television",
@@ -21,20 +21,20 @@
   "author": {
     "name": "Imaginary Sense",
     "email": "support@imaginary.tech",
-    "url": "http://imaginary.tech/"
+    "url": "https://imaginary.tech/"
   },
   "contributors": [
-    "Javier O. Cordero-Pérez <javier@imaginary.tech> (http://javiercordero.info)",
+    "Javier O. Cordero-Pérez <javier@imaginary.tech> (https://javiercordero.info)",
     "Victor A. Ortiz-Alvarado <va2ron1@gmail.com> (https://twitter.com/Va2ron1)",
     "Rafael J. Sierra-Soto <rafael.sierra2@upr.edu> (https://www.facebook.com/rafael.jose.7737)",
     "Keyvan Pérez Pérez <keyvan.perez2@gmail.com> (https://github.com/keyvanp)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ImaginarySense/Teleprompter-Electron"
+    "url": "https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron"
   },
   "bugs": {
-    "url": "https://github.com/ImaginarySense/Teleprompter-Core/issues"
+    "url": "https://github.com/ImaginarySense/Imaginary-Teleprompter/issues"
   },
   "main": "main.js",
   "dependencies": {
@@ -71,7 +71,7 @@
     "squirrelWindows": {
       "msi": false,
       "loadingGif": "build/install-spinner.png",
-      "remoteReleases": "https://github.com/ImaginarySense/Teleprompter-Electron"
+      "remoteReleases": "https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron"
     },
     "nsis": {
       "oneClick": "false",
@@ -102,7 +102,7 @@
       ]
     },
     "mac": {
-      "target": "dmg",
+      "target": "pkg",
       "icon": "build/icon.icns",
       "category": "public.app-category.video",
       "type": "distribution"
@@ -110,19 +110,25 @@
     "deb": {
       "icon": "build/icon.icns"
     },
+    "snap": {
+      "confinement": "strict",
+      "summary": "Professional grade, free software, teleprompter application.",
+      "grade": "stable",
+      "category": "AudioVideo"
+    },
     "linux": {
       "target": [
         "AppImage",
         "tar.gz",
         "deb",
         "rpm",
-        "pacman",
         "freebsd"
       ],
+      "icon": "build/icon.icns",
       "executableName": "imaginary-teleprompter",
       "synopsis": "The most complete and professional free software teleprompter application.",
-      "vendor": "Imaginary Sense <support@imaginary.tech> (http://imaginary.tech)",
-      "maintainer": "Javier O. Cordero Perez <javier@imaginary.tech> (http://javiercordero.info)",
+      "vendor": "Imaginary Sense <support@imaginary.tech> (https://imaginary.tech)",
+      "maintainer": "Javier O. Cordero Perez <javier@imaginary.tech> (https://javiercordero.info)",
       "description": "Professional grade, free software teleprompter. Built with web technologies so anyone can customize it. Features include: mirroring, dual-screen support, rich text editing, image support, custom styles, tablet mode, webcam mode, auto-save and accelerated graphics.",
       "category": "AudioVideo;Video;Sequencer",
       "packageCategory": "Video"
