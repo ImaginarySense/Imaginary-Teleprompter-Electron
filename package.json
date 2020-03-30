@@ -41,7 +41,7 @@
     "7zip-bin": "^3.1.0"
   },
   "devDependencies": {
-    "electron": "1.8.4",
+    "electron": "1.8.8",
     "electron-builder": "20.8.1",
     "electron-builder-squirrel-windows": "20.8.0",
     "electron-squirrel-startup": "1.0.0"
