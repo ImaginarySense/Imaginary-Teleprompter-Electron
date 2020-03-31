@@ -118,7 +118,11 @@
     },
     "linux": {
       "target": [
-        "pacman"
+        "AppImage",
+        "tar.gz",
+        "deb",
+        "rpm",
+        "freebsd"
       ],
       "icon": "build/icon.icns",
       "executableName": "imaginary-teleprompter",
