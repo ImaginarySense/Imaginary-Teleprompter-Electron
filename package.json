@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "electron": "1.8.8",
-    "electron-builder": "20.8.1",
+    "electron-builder": "20.14.7",
     "electron-builder-squirrel-windows": "20.8.0",
     "electron-squirrel-startup": "1.0.0"
   },
@@ -51,15 +51,15 @@
     "postinstall": "electron-builder install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
-    "dist:linux": "build --linux --ia32 --x64",
-    "dist:linux32": "build --linux --ia32",
-    "dist:linux64": "build --linux --x64",
+    "dist:linux": "electron-builder build --linux --ia32 --x64",
+    "dist:linux32": "electron-builder build --linux --ia32",
+    "dist:linux64": "electron-builder build --linux --x64",
     "dist:linuxarm": "electron-builder build --linux --armv7l",
-    "dist:macos": "build --mac",
-    "dist:win": "build --win --ia32 --x64",
-    "dist:win32": "build --win --ia32",
-    "dist:win64": "build --win --x64",
-    "pack": "build --dir"
+    "dist:macos": "electron-builder build --mac",
+    "dist:win": "electron-builder build --win --ia32 --x64",
+    "dist:win32": "electron-builder build --win --ia32",
+    "dist:win64": "electron-builder build --win --x64",
+    "pack": "electron-builder build --dir"
   },
   "engine": "node >= 8.2.1",
   "preferGlobal": "false",
@@ -122,7 +122,9 @@
         "tar.gz",
         "deb",
         "rpm",
-        "freebsd"
+        "freebsd",
+        "pacman",
+        "snap"
       ],
       "icon": "build/icon.icns",
       "executableName": "imaginary-teleprompter",
