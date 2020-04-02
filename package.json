@@ -42,9 +42,7 @@
   },
   "devDependencies": {
     "electron": "1.8.8",
-    "electron-builder": "20.14.7",
-    "electron-builder-squirrel-windows": "20.8.0",
-    "electron-squirrel-startup": "1.0.0"
+    "electron-builder": "20.14.7"
   },
   "scripts": {
     "setup": "npm install & cd app & npm install & cd ..",
