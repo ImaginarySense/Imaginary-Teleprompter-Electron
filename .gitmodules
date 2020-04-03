@@ -1,3 +1,3 @@
 [submodule "app"]
 	path = app
-	url = https://github.com/ImaginarySense/Teleprompter-Core
+	url = git@github.com:ImaginarySense/Imaginary-Teleprompter.git
