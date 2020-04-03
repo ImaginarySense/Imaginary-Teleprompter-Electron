@@ -4,8 +4,8 @@
 [![GitHub release](https://img.shields.io/github/release/ImaginarySense/Imaginary-Teleprompter-Electron.svg)](https://github.com/ImaginarySense/Imaginary-Teleprompter-Electron/releases)
 [![GitHub contributors](https://img.shields.io/github/contributors/ImaginarySense/Imaginary-Teleprompter.svg)](https://github.com/ImaginarySense/Imaginary-Teleprompter/graphs/contributors)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ImaginarySense/Imaginary-Teleprompter.svg)](http://isitmaintained.com/project/ImaginarySense/Imaginary-Teleprompter "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/ImaginarySense/Imaginary-Teleprompter.svg)](http://isitmaintained.com/project/ImaginarySense/Imaginary-Teleprompter "Percentage of issues still open")
-[![SourceForge](https://img.shields.io/sourceforge/dw/teleprompter-imaginary-films.svg)](https://sourceforge.net/projects/teleprompter-imaginary-films/)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/ImaginarySense/Imaginary-Teleprompter-Electron.svg)](http://isitmaintained.com/project/ImaginarySense/Imaginary-Teleprompter-Electron "Percentage of issues still open")
+[![SourceForge](https://img.shields.io/sourceforge/dm/teleprompter-imaginary-films.svg)](https://sourceforge.net/projects/teleprompter-imaginary-films/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/imaginary_tech.svg?style=social&label=Follow)](https://twitter.com/user/imaginary_tech)
 # Imaginary Teleprompter Electron
 Build standalone cross-platform instances of our Teleprompter using Electron.
