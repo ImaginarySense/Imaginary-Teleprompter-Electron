@@ -1,27 +1,29 @@
 {
   "name": "imaginary-teleprompter-electron",
   "email": "teleprompter@imaginary.tech",
-  "homepage": "http://imaginary.tech/teleprompter/",
+  "homepage": "https://imaginary.tech/teleprompter/",
   "description": "The most complete and professional free software teleprompter application.",
   "license": "AGPL-3.0+",
-  "version": "2.3.4",
+  "version": "3.0.0",
   "keywords": [
+    "free",
     "teleprompter",
-    "television",
-    "news",
-    "multiplatform",
-    "portable",
+    "online",
     "software",
     "local",
-    "online",
+    "imaginary",
     "imaginary sense",
-    "imaginary films",
-    "imaginary"
+    "television",
+    "tv",
+    "news",
+    "multiplatform",
+    "crossplatform",
+    "electron"
   ],
   "author": {
     "name": "Imaginary Sense",
     "email": "support@imaginary.tech",
-    "url": "http://imaginary.tech/"
+    "url": "https://imaginary.tech/"
   },
   "contributors": [
     "Javier O. Cordero-Pérez <javier@imaginary.tech> (http://javiercordero.info)",
@@ -31,26 +33,23 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ImaginarySense/Teleprompter-Electron"
+    "url": "https://github.com/ImaginarySense/Imaginay-Teleprompter-Electron"
   },
   "bugs": {
-    "url": "https://github.com/ImaginarySense/Teleprompter-Core/issues"
+    "url": "https://github.com/ImaginarySense/Imaginay-Teleprompter/issues"
   },
   "main": "main.js",
   "dependencies": {
-    "7zip-bin": "^3.1.0",
-    "@ckeditor/ckeditor5-paste-from-office": "^11.0.1"
+    "7zip-bin": "^3.1.0"
   },
   "devDependencies": {
-    "electron": "1.8.4",
-    "electron-builder": "20.8.1",
-    "electron-builder-squirrel-windows": "20.8.0",
-    "electron-squirrel-startup": "1.0.0"
+    "electron": "9.0.1",
+    "electron-builder": "22.7.0"
   },
   "scripts": {
     "setup": "npm install & cd app & npm install & cd ..",
     "postinstall": "electron-builder install-app-deps",
-    "start": "electron ./app --enable-logging",
+    "start": "electron . --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
     "dist:linux": "build --linux --ia32 --x64",
     "dist:linux32": "build --linux --ia32",
@@ -62,18 +61,13 @@
     "dist:win64": "build --win --x64",
     "pack": "build --dir"
   },
-  "engine": "node >= 8.2.1",
+  "engine": "node >= 12.16.2",
   "preferGlobal": "false",
   "copyright": "Copyright © year ${author}",
   "build": {
     "appId": "tech.imaginary.teleprompter",
     "productName": "Imaginary Teleprompter",
     "asar": "true",
-    "squirrelWindows": {
-      "msi": false,
-      "loadingGif": "build/install-spinner.png",
-      "remoteReleases": "https://github.com/ImaginarySense/Teleprompter-Electron"
-    },
     "nsis": {
       "oneClick": "false",
       "perMachine": "true",
