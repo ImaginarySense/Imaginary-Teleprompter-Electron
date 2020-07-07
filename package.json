@@ -41,7 +41,7 @@
     "7zip-bin": "^3.1.0"
   },
   "devDependencies": {
-    "electron": "1.8.8",
+    "electron": "7.2.4",
     "electron-builder": "20.14.7"
   },
   "scripts": {
