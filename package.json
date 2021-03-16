@@ -38,11 +38,8 @@
   },
   "main": "main.js",
   "dependencies": {
-    "7zip-bin": "^3.1.0"
-  },
-  "devDependencies": {
-    "electron": "1.8.8",
-    "electron-builder": "20.14.7"
+    "7zip-bin": "^3.1.0",
+    "@electron/remote": "^1.0.4"
   },
   "scripts": {
     "setup": "npm install & cd app & npm install & cd ..",
@@ -134,5 +131,9 @@
       "packageCategory": "Video"
     },
     "compression": "maximum"
+  },
+  "devDependencies": {
+    "electron": "^12.0.1",
+    "electron-builder": "^22.10.5"
   }
 }
