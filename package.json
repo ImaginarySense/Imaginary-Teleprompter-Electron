@@ -1,10 +1,9 @@
 {
   "name": "imaginary-teleprompter-electron",
-  "email": "teleprompter@imaginary.tech",
   "homepage": "https://imaginary.tech/teleprompter/",
-  "description": "The most complete and professional free software teleprompter application.",
+  "description": "Free software teleprompter application.",
   "license": "GPL-3.0+",
-  "version": "2.4.0",
+  "version": "4.0.0",
   "keywords": [
     "teleprompter",
     "television",
@@ -38,7 +37,8 @@
   },
   "main": "main.js",
   "dependencies": {
-    "7zip-bin": "^5.1.1"
+    "7zip-bin": "^5.1.1",
+    "route-trie": "^3.0.0"
   },
   "scripts": {
     "setup": "npm install & cd app/dist & npm install & cd ../..",
@@ -132,8 +132,9 @@
     "compression": "maximum"
   },
   "devDependencies": {
+    "@electron/remote": "^1.0.4",
     "electron": "^12.0.2",
     "electron-builder": "^22.10.5",
-    "@electron/remote": "^1.0.4"
+    "gulp": "^4.0.2"
   }
 }
